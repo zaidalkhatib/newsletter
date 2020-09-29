@@ -1,3 +1,3 @@
 # newsletter
 
-This is a newletter website bulit using Node
+This is a newsletter website built using Node
