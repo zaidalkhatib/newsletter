@@ -5,8 +5,6 @@ const {json} = require("body-parser");
 const {request} = require("http");
 const dotenv = require("dotenv");
 dotenv.config();
-console.log(process.env.URL);
-console.log(process.env.AUTH);
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.get("/", (req, res) => {
@@ -31,8 +29,6 @@ app.post("/", (req, res) => {
     ],
   };
   var jsonData = JSON.stringify(data);
-
-  //   const KEY = "b92eae4f45c31ad4549f5160343564a1-us8";
   const url = process.env.URL;
   const options = {
     method: "POST",
