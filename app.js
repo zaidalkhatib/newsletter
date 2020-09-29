@@ -1,8 +1,6 @@
 var express = require("express");
 const https = require("https");
 var bodyParser = require("body-parser");
-const {json} = require("body-parser");
-const {request} = require("http");
 const dotenv = require("dotenv");
 dotenv.config();
 const app = express();
