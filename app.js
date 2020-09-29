@@ -13,7 +13,6 @@ app.post("/", (req, res) => {
   var firstName = req.body.firstName;
   var lastName = req.body.lastName;
   var email = req.body.email;
-  console.log(firstName, lastName, email);
   var data = {
     members: [
       {
@@ -35,7 +34,6 @@ app.post("/", (req, res) => {
   const request = https.request(url, options, function (response) {
     response.on("data", function (data) {
       console.log(response.statusCode);
-      //   console.log(JSON.parse(data));
       if (response.statusCode === 200) {
         res.redirect("/success");
       }
