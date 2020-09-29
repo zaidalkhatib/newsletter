@@ -1,3 +1,3 @@
 # newsletter
 
-This a newletter website bulit using Node
+This is a newletter website bulit using Node
